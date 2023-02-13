@@ -1,0 +1,45 @@
+{
+  "name": "vue-webpack-micro",
+  "version": "1.0.0",
+  "description": "vue",
+  "main": "index.js",
+  "scripts": {
+    "dev": "np webpack-dev-server --process --config build/webpack.dev.js",
+    "dll": "rm -rf dll/ && webpack --config build/webpack.dll.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liaohongdong/vue-webpack-micro.git"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "liaohongdong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liaohongdong/vue-webpack-micro/issues"
+  },
+  "homepage": "https://github.com/liaohongdong/vue-webpack-micro#readme",
+  "devDependencies": {
+    "element-ui": "^2.15.13",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "lodash": "^4.17.21",
+    "ora": "^6.1.2",
+    "portfinder": "^1.0.32",
+    "rimraf": "^4.1.2",
+    "shelljs": "^0.8.5",
+    "vue": "^3.2.47",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "engines": {
+    "node": ">= 12.0.0",
+    "npm": ">= 7.0.0"
+  }
+}
